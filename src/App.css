@@ -1,0 +1,401 @@
+html,body{
+  font-family: 'Peddana', serif;
+}
+.App{
+  background-color: rgb(228, 224, 224);
+}
+.App h1{
+  font-size: 25px;
+  margin-left:30px;
+}
+.App p{
+  font-size: 20px;
+  margin-left:30px;
+}
+.App-header {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+.App-header button{
+float:left;
+padding-left:30px;
+}
+
+.App-logo{
+  margin-left:200px;
+  width:600px;
+  height:400px;
+
+}
+.App-title {
+  font-size: 1.5em;
+}
+.LogoTexts{
+  margin-top:30px;
+  line-height: 1.5rem;
+  grid-area: 'logotext';
+  text-align: justify;
+  
+}
+.bubble {
+  display:grid;
+  grid-template-columns:3fr 1fr;
+  grid-area: 'popup';
+  position: relative;
+  width:80%;
+  margin-left:100px;
+  height:70px;
+  background-color: #458bd0;
+}
+.bubble h4{
+  color:white;
+  margin-left:150px;
+}
+.bubble button{
+  height:40px;
+  margin-top:20px;
+  border-radius:5px;
+  width:140px;
+}
+.borderBubble{
+  background-color:#222; 
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  border-top: 60px solid #458bd0;
+  border-top-color:#458bd0; 
+  border-left: 0px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.App-intro {
+  color:rgb(247, 240, 240);
+  font-size: large;
+}
+
+.IconsInHeader{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin:0 40px 0 40px;
+  height:500px;
+  border-image:url(Border-BG.jpg) 30 round;
+}
+.columns{
+  margin-left:50px;
+  align-items: center;
+  text-align:center;
+  line-height: 1.6;
+}
+.columns .fa-desktop{
+  font-size:36px;
+  border-radius: 50%;
+  background-color: #458bd0;
+  padding:20px;
+}
+.columns .fa-mobile-phone{
+  font-size:36px;
+  border-radius: 50%;
+  color:white;
+  background-color: #222;
+  padding: 14px 25px;
+}
+.columns .fa-recycle{
+  font-size:36px;
+  border-radius: 50%;
+  color:white;
+  background-color: #222;
+  padding: 15px 15px;
+}
+
+.columns:hover{
+  background-color:white;
+  cursor: pointer;
+}
+.columns p{
+height:150px;
+}
+.columns .HeaderButton{
+  display:inline-block;
+   margin:5px;
+  border-bottom: none;
+   background-color: #458bd0 ;
+   border: none;
+   color: black;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;   
+}
+
+.BorderTop{
+height:20px;
+background-image: url('Border-BG.jpg');
+background-repeat: repeat;
+background-size: 90px;
+}
+
+.RecentWork{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  margin:50px;
+ }
+ .recentWorks{
+   margin:20px;
+ }
+ .recentWorkImage{
+   object-fit: cover;
+   width:100%;
+   height:100%;
+ }
+ .BlogStyling{
+   margin:0;
+   padding:0;
+   background-color: white;
+   position:relative;
+   height:100px;
+ }
+ .BlogStyling h1,p{
+   margin:10px;
+ } 
+ .BlogStyling :after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  border-top: 60px solid white;
+  border-top-color:white; 
+  border-left: -10px solid transparent;
+  border-right: 50px solid transparent;
+}
+ .Border{
+   display:grid;
+   grid-template-columns: 2fr 0.5fr 2fr;
+   height:10px;
+ }
+ .BorderLeft{
+  height:20px;
+  background-image: url('Border-BG.jpg');
+  background-repeat: repeat;
+  background-size: 90px;  
+ }
+ .BorderHeading{
+text-align:center;
+ }
+ 
+ .BorderRight{
+  height:20px;
+  background-image: url('Border-BG.jpg');
+  background-repeat: repeat;
+  background-size: 90px;  
+ }
+ 
+ .testimonials{
+   display:grid;
+   grid-template-columns:2fr 1fr;
+   grid-template-rows: 50px auto;
+   width:100%;
+   grid-gap:10px;
+   margin:50px;
+   border-image:url(Border-BG.jpg) 30 stretch;
+ }
+ 
+ .TestimonialWrapper{
+display:grid;
+grid-template-columns: 1fr 1fr;
+margin:0 0 0 50px;
+grid-gap:14px;
+ }
+ .Testimonials{
+   background-color:white;
+   position:relative;
+   margin-bottom:60px;
+   box-shadow: 5px 10px 18px #888888;
+ }
+ .Testimonials h1{
+   margin-left:20px;
+ }
+ .Testimonials p{
+  margin-left:20px;
+}
+ .Testimonials :after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  border-top: 50px solid white;
+  border-top-color:white; 
+  border-left: 0px solid transparent;
+  border-right: 50px solid transparent;
+}
+ .Development{
+   margin:0 50px 0 50px;
+   box-shadow: 5px 10px 18px #888888;
+   background-color: white;
+   line-height: 2em;
+ }
+ .DesignButton{
+   border-bottom: none;
+   background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+
+ }
+ .ProductionButton{
+  border-bottom: none;
+  background-color: rgb(138, 133, 133);
+   border: none;
+   color: black;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+ .ReadMore {
+   display:inline-block;
+   float:right;
+   margin:5px;
+  border-bottom: none;
+   background-color: #458bd0 ;
+   border: none;
+   color: black;
+   padding: 15px 32px;
+   border-radius: 5px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 20px;
+   cursor: pointer;  
+ }
+ .Footer{
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   background-color: #222;
+   line-height: 1.6em;
+   padding:50px;
+
+ }
+ .Footer p, span{
+ margin-left:25px;
+ }
+.BlackBox{
+  border: 2px, solidblack;
+  background-color:gray;
+  padding:25px;
+  margin:2px;
+  width:20px;
+  height:20px; 
+}
+.LatestTweets{
+  margin:0;
+}
+.Flickr{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+
+}
+.AboutUs{
+  margin:0 0 0 50px;
+}
+
+.FooterComponents .borderBubble{
+  background-color: white;
+  background-color: rgb(228, 224, 224);
+}
+.Footer .LatestPosts p{
+  border-bottom:2px solid black;
+
+}
+.product-footer{
+  background-color: rgb(77, 72, 72);
+
+}
+.product-footer{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  text-align:right;
+  padding:10px 0 10px 0;
+  
+}
+.socialMediaIcons{
+  display:flex;
+  padding-left:300px;
+  text-align:right;
+  color: rgb(241, 220, 220);
+  
+  
+}
+.fa {
+  padding: 3px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: rgb(241, 220, 220);
+  
+}
+li{
+  list-style:none; 
+}
+.fa:hover {
+    opacity: 0.7;
+
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 25px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
